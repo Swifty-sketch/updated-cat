@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.section {
+  padding: 40px;
+  background-color: #f1f1f1;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.section1 img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section1 h2 {
+  font-size: 2.5rem;
+}
+
+.catGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.catGrid img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+img {
+  width: 80%;
+}
+
+img:hover,
+button:hover {
+  /*animation*/
+  transform: scale(1.01);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes example {
+  0%, 100%   {background-image: url("images/3.webp")}
+  25%  {background-image: url("images/4.webp")}
+  50%  {background-image: url("images/5.webp")}
+  75%  {background-image: url("images/6.jpeg")}
+  100% {background-image:url("images/7.jpeg")}
+}
+
+@media (min-width: 279px) {
+  nav a {
+    display: none;
+  }
+
+  .section1{
+    display: block;
+  }
+
+  .mySlides {
+    width: 90%;
+  }
+
+  #katt1{
+    margin-top: 10px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  nav a {
+    display: inline-flex;
+  }
+
+  .section1{
+    display: flex;
+  }
+
+  .fa {
+    display: none;
+  }
+
+  #katt1 {
+    width: 50%;
+    margin-top: 0;
+  }
+}
